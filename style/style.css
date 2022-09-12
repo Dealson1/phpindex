@@ -1,0 +1,159 @@
+body{
+    background-color: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    padding: 10px; /*tyhi alateksti ja borderi vahel*/
+    border: 2px solid #E4EBF2;
+    border-radius: 60px 60px 0px 0px;
+    background-color: #192E59;
+    color: #E4EBF2;
+    text-align: center;
+}
+
+.navbar {
+    font-family: Tahoma;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar-menu li{
+    display: inline-block;
+}
+
+.navbar-menu li a{
+    display: inline-block;
+    color: #262626;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .3s;
+}
+
+.navbar-menu li a:hover{
+    color: #FFFFFF;
+    background-color: #86C6E7;
+    border-radius: 60px;
+    font-size: 22px;
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+    color: #262626;
+    transition: all .3s;
+    padding: 10px;
+}
+
+.navbar-brand:hover{
+    color: #FFFFFF;
+    background-color: #86C6E7;
+    border-radius: 60px;
+    font-size: 30px;
+}
+
+footer{
+    overflow:auto;
+    width: 100%;
+    padding: 10px; /*tyhi alateksti ja borderi vahel*/
+    border: 2px solid #F2F2F2;
+    border-radius: 0px 0px 60px 60px;
+    background-color: #192E59;
+    font-size: 20px;
+    color: #E4EBF2;
+    font-family: Tahoma;
+    text-align: center;
+}
+
+header h1{
+    font-size: 30px;
+    color: #E4EBF2;
+    font-family: Tahoma;
+}
+
+
+
+main{
+    width: 80%;
+    margin: 2%;
+    position: relative;
+}
+
+/*section{
+	position: absolute;
+	margin-top: 10px;
+	padding: 2%;
+	heiding: 200px;
+}*/
+
+/*section.esimene{ class=esimene
+	border: 1px solid;
+	width: 300px;
+	left: 100px;
+	top: 50px;
+}*/
+
+/*section.teine{ class=teine
+	border: 1px solid;
+	width: 300px;
+	left: 500px;
+	top: 50px;
+}*/
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 300px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+p{
+    line-height: 1.5;
+}
